@@ -1,0 +1,104 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Buscador */
+.input-group {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group .form-control,
+.input-group .btn {
+    border: none;
+    border-radius: 0;
+}
+
+.input-group .form-control {
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+}
+
+.input-group .btn {
+    border-radius: 0 10px 10px 0;
+    background-color: #007bff;
+    color: white;
+}
+
+/* Pestañas */
+.nav-pills .nav-link {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Tab content */
+.table-responsive {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    border-radius: 10px;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+.table-dark {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group .form-control,
+    .input-group .btn {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .table th,
+    .table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .nav-pills .nav-link {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
